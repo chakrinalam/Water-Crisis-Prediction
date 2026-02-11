@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Citizen Dashboard - Water Crisis System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #023e8a;
+            height: 100vh;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .sidebar a:hover {
+            background-color: #0077b6;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            background-color: #f4f9ff;
+        }
+
+        .main-content h1 {
+            color: #023e8a;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #0077b6;
+        }
+
+        .card p {
+            font-size: 22px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Citizen Panel</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Submit Complaint</a>
+        <a href="#">My Complaints</a>
+        <a href="#">Risk Zones</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to Your Dashboard</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Total Complaints Submitted</h3>
+                <p>05</p>
+            </div>
+
+            <div class="card">
+                <h3>Status Overview</h3>
+                <p>2 Resolved | 3 Pending</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
