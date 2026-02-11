@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Risk Zone Dashboard - Water Crisis System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d3557;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Risk Colors */
+        .red {
+            color: white;
+            background-color: #e63946;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .orange {
+            color: white;
+            background-color: #f4a261;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .green {
+            color: white;
+            background-color: #2a9d8f;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Map View */
+        .map-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .area-box {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .area-red {
+            background-color: #e63946;
+        }
+
+        .area-orange {
+            background-color: #f4a261;
+        }
+
+        .area-green {
+            background-color: #2a9d8f;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Risk Zone Classification Dashboard</h1>
+
+    <!-- Risk Table -->
+    <table>
+        <tr>
+            <th>Area Name</th>
+            <th>Complaint Count</th>
+            <th>Risk Level</th>
+        </tr>
+
+        <tr>
+            <td>Area A</td>
+            <td>25</td>
+            <td><span class="red">🔴 Red</span></td>
+        </tr>
+
+        <tr>
+            <td>Area B</td>
+            <td>10</td>
+            <td><span class="orange">🟠 Orange</span></td>
+        </tr>
+
+        <tr>
+            <td>Area C</td>
+            <td>2</td>
+            <td><span class="green">🟢 Green</span></td>
+        </tr>
+    </table>
+
+    <!-- Simple Colored Map View -->
+    <div class="map-container">
+        <div class="area-box area-red">Area A<br>🔴 High Risk</div>
+        <div class="area-box area-orange">Area B<br>🟠 Medium Risk</div>
+        <div class="area-box area-green">Area C<br>🟢 Low Risk</div>
+    </div>
+
+</body>
+
+</html>

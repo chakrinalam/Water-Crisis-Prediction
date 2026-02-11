@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Complaint - Water Crisis System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00b4d8, #90e0ef);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #023e8a;
+            margin-bottom: 25px;
+        }
+
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #023e8a;
+        }
+
+        .success-message {
+            margin-top: 15px;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+
+    <script>
+        function submitComplaint() {
+            document.getElementById("successMsg").style.display = "block";
+            return false; // Prevent actual form submission
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Submit Water Complaint</h2>
+
+        <form onsubmit="return submitComplaint()">
+
+            <!-- Area Name Dropdown -->
+            <select required>
+                <option value="">Select Area Name</option>
+                <option>Area 1</option>
+                <option>Area 2</option>
+                <option>Area 3</option>
+            </select>
+
+            <!-- Severity Level -->
+            <select required>
+                <option value="">Select Severity Level</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <!-- Description Box -->
+            <textarea placeholder="Describe the issue..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Complaint</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMsg" class="success-message">
+            Complaint Submitted Successfully
+        </div>
+
+    </div>
+
+</body>
+
+</html>

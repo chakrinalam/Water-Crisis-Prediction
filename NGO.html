@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NGO Dashboard - Water Crisis System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-color: #f4f9ff;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #6a4c93;
+            height: 100vh;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #4a3570;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #6a4c93;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6a4c93;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .red {
+            background-color: #e63946;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .btn-accept {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-update {
+            background-color: #457b9d;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>NGO Panel</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Red Zone Alerts</a>
+        <a href="#">My Assignments</a>
+        <a href="#">Update Status</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Red Zone Alerts & Assignments</h1>
+
+        <table>
+            <tr>
+                <th>Area</th>
+                <th>Risk Level</th>
+                <th>Action</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Area A</td>
+                <td><span class="red">🔴 Red</span></td>
+                <td>
+                    <button class="btn-accept">Accept Assignment</button>
+                </td>
+                <td>Pending</td>
+            </tr>
+
+            <tr>
+                <td>Area A</td>
+                <td><span class="red">🔴 Red</span></td>
+                <td>
+                    <button class="btn-update">Update Status</button>
+                </td>
+                <td>In Progress</td>
+            </tr>
+
+            <tr>
+                <td>Area A</td>
+                <td><span class="red">🔴 Red</span></td>
+                <td>
+                    <button class="btn-update">Update Status</button>
+                </td>
+                <td>Resolved</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Allocation - Water Crisis System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d3557;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Risk Colors */
+        .red {
+            color: white;
+            background-color: #e63946;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Status Colors */
+        .assigned {
+            color: white;
+            background-color: #457b9d;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .progress {
+            color: white;
+            background-color: #f4a261;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .resolved {
+            color: white;
+            background-color: #2a9d8f;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn-tanker {
+            background-color: #0077b6;
+        }
+
+        .btn-ngo {
+            background-color: #6a4c93;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Resource Allocation & Coordination</h1>
+
+    <table>
+        <tr>
+            <th>Area</th>
+            <th>Risk Level</th>
+            <th>Action</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Area A</td>
+            <td><span class="red">🔴 Red</span></td>
+            <td>
+                <button class="btn-tanker">Assign Tanker</button>
+                <button class="btn-ngo">Notify NGO</button>
+            </td>
+            <td><span class="assigned">Assigned</span></td>
+        </tr>
+
+        <tr>
+            <td>Area A</td>
+            <td><span class="red">🔴 Red</span></td>
+            <td>
+                <button class="btn-tanker">Assign Tanker</button>
+                <button class="btn-ngo">Notify NGO</button>
+            </td>
+            <td><span class="progress">In Progress</span></td>
+        </tr>
+
+        <tr>
+            <td>Area A</td>
+            <td><span class="red">🔴 Red</span></td>
+            <td>
+                <button class="btn-tanker">Assign Tanker</button>
+                <button class="btn-ngo">Notify NGO</button>
+            </td>
+            <td><span class="resolved">Resolved</span></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
